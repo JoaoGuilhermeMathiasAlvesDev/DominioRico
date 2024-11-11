@@ -1,6 +1,6 @@
 ﻿namespace CatelogoDominio.Entity
 {
-    internal interface IAgregatRoot
+    public interface IAggretRoot
     {
     }
 }

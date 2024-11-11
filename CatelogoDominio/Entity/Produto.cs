@@ -1,14 +1,17 @@
-﻿using ServicoCore.E.EntityBase;
+﻿using CatelogoDominio.ObjetcValue;
+using ServicoCore;
+using ServicoCore.EntityBase.EntityBase;
 using ServicoCore.EntityBase.EntityBase;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CatelogoDominio.Entity
 {
-    public class Produto : EntityBase, IAgregatRoot
+    public class Produto : EntityBase, IAggregateRoot
     {
         public Guid CategoriaId { get; private set; }
         public string Nome { get; private set; }
@@ -25,12 +28,13 @@ namespace CatelogoDominio.Entity
 
         public int Quantidade { get; private set; }
 
+        public Dimensoes Dimensoes { get; set; }
 
         public Categoria Categoria { get; private set; }
 
         protected Produto() { }
 
-        public Produto(string nome, string descricao, bool ativo, decimal valor, Guid categoriaId, DateTime datacadastro, string imagem)
+        public Produto(string nome, string descricao, bool ativo, decimal valor, Guid categoriaId, DateTime datacadastro, string imagem,Dimensoes dimensoes)
         {
             Nome = nome;
             Descricao = descricao;
@@ -38,6 +42,9 @@ namespace CatelogoDominio.Entity
             CategoriaId = categoriaId;
             DataCadastro = datacadastro;
             Imagem = imagem;
+            Dimensoes = dimensoes;
+
+            Validar();
         }
 
         public void Ativar() => Ativo = true;
@@ -72,7 +79,11 @@ namespace CatelogoDominio.Entity
 
         public void Validar()
         {
-
+            Validacoes.ValidarSeVazio(Nome, "O campo Nome do produto não pode estar vazio");
+            Validacoes.ValidarSeVazio(Descricao, "O campo Descricao do produto não pode estar vazio");
+            Validacoes.ValidarSeIgual(CategoriaId, Guid.Empty, "O campo CategoriaId do produto não pode estar vazio");
+            Validacoes.ValidarSeMenorQue(valor, 1, "O campo Valor do produto não pode se menor igual a 0");
+            Validacoes.ValidarSeVazio(Imagem, "O campo Imagem do produto não pode estar vazio");
         }
 
     }
