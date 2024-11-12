@@ -1,6 +1,6 @@
 ﻿using CatelogoDominio.Entity;
 using CatelogoDominio.ObjetcValue;
-using ServicoCore;
+using ServicoCore.DomainObjects;
 using System.Drawing;
 using System.Runtime.ConstrainedExecution;
 

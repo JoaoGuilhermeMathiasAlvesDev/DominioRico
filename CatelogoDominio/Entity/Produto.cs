@@ -1,5 +1,5 @@
 ﻿using CatelogoDominio.ObjetcValue;
-using ServicoCore;
+using ServicoCore.DomainObjects;
 using ServicoCore.EntityBase.EntityBase;
 using ServicoCore.EntityBase.EntityBase;
 using System;

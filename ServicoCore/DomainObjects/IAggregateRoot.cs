@@ -1,4 +1,4 @@
-﻿namespace ServicoCore
+﻿namespace ServicoCore.DomainObjects
 {
     public interface IAggregateRoot
     {

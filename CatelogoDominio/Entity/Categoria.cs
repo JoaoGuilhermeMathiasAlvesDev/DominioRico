@@ -1,4 +1,4 @@
-﻿using ServicoCore;
+﻿using ServicoCore.DomainObjects;
 using ServicoCore.EntityBase.EntityBase;
 using System;
 using System.Collections.Generic;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServicoCore
+namespace ServicoCore.DomainObjects
 {
     public class DomainException : Exception
     {
@@ -13,7 +13,7 @@ namespace ServicoCore
         public DomainException(string mensagem) : base(mensagem) { }
 
         public DomainException(string mensagem, Exception innerExeception) : base(mensagem, innerExeception) { }
-      
+
 
     }
 }
