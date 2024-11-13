@@ -16,11 +16,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B9EFE872-8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicoCore", "ServicoCore\ServicoCore.csproj", "{6118CEC5-6E91-4B01-BB91-21E28F95E74C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominioCatalogoTeste", "DominioCatalogoTeste\DominioCatalogoTeste.csproj", "{44D0AC5B-6D0A-47B1-B974-E90036367BC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominioCatalogoTeste", "DominioCatalogoTeste\DominioCatalogoTeste.csproj", "{44D0AC5B-6D0A-47B1-B974-E90036367BC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoData", "CatalogoData\CatalogoData.csproj", "{CC4AAE6F-CB7E-45DA-9CDD-6D0B5BBDB50C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoData", "CatalogoData\CatalogoData.csproj", "{CC4AAE6F-CB7E-45DA-9CDD-6D0B5BBDB50C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicationCatalogo", "AplicationCatalogo\AplicationCatalogo.csproj", "{4CF1C1EC-4DD7-420A-9574-20C7F03D0CBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AplicationCatalogo", "AplicationCatalogo\AplicationCatalogo.csproj", "{4CF1C1EC-4DD7-420A-9574-20C7F03D0CBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{DC9262B9-62F8-46B1-BD8C-DAD0E21CF5DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaApresentacao", "LojaApresentacao\LojaApresentacao.csproj", "{0BC3AA29-95BD-443C-8DDA-64CDAA1066CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +52,10 @@ Global
 		{4CF1C1EC-4DD7-420A-9574-20C7F03D0CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CF1C1EC-4DD7-420A-9574-20C7F03D0CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CF1C1EC-4DD7-420A-9574-20C7F03D0CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BC3AA29-95BD-443C-8DDA-64CDAA1066CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BC3AA29-95BD-443C-8DDA-64CDAA1066CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BC3AA29-95BD-443C-8DDA-64CDAA1066CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BC3AA29-95BD-443C-8DDA-64CDAA1066CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +68,7 @@ Global
 		{44D0AC5B-6D0A-47B1-B974-E90036367BC9} = {E1F4BB67-2BDB-4DB5-A0DD-CDAD2965B65F}
 		{CC4AAE6F-CB7E-45DA-9CDD-6D0B5BBDB50C} = {E2E8FF2B-0D51-4986-84C7-7662BA5AA276}
 		{4CF1C1EC-4DD7-420A-9574-20C7F03D0CBD} = {E2E8FF2B-0D51-4986-84C7-7662BA5AA276}
+		{0BC3AA29-95BD-443C-8DDA-64CDAA1066CF} = {DC9262B9-62F8-46B1-BD8C-DAD0E21CF5DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C179E16-9B17-4830-BA0D-153EBA711791}
